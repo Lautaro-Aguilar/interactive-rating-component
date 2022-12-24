@@ -9,36 +9,102 @@ html {
     box-sizing: inherit;
 }
 
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightgrey:hsl(217, 12%, 63%) ;
+    --mediumgrey:hsla(216, 12%, 54%, 0.205) ;
+    --darkblue: hsl(213, 19%, 18%);
+    --verydarkblue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
 body {
-    background: hsl(216, 12%, 8%);
+    background: var(--verydarkblue);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    width: 30rem;
-    background-color: hsl(213, 19%, 18%);
+    width: 40rem;
+    background-color: var(--darkblue);
+    padding: 3rem;
+    border-radius: 2.5rem;
 }
 
-p {
+.desc {
     font-size: 1.5rem;
+    color: var(--lightgrey);
+    line-height: 1.8;
+    margin: 0 0;
+}
+
+.title {
+    font-size: 2.8rem;
+    color: var(--white);
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.image-wrapper {
+    border-radius: 50%;
+    background-color: var(--mediumgrey);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.7rem;
 }
 
 .rating-wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 2.7rem 0;
 }
 .circle {
     border-radius: 50%;
-    background-color: aquamarine;
-    width: 2.5rem;
-    height: 2.5rem;
+    background-color: var(--mediumgrey);
+    width: 5rem;
+    height: 5rem;
     text-align: center;
-    line-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.image-wrapper {
-
-}
 
 input[type=radio] {
+    display: none;
+}
+
+label {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--lightgrey);
+}
+
+.button,
+.rating-wrapper,
+.text-wrapper{
+    
+}
+
+input[type=submit] {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1.8rem;
+    border: none;
+    background-color: var(--orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.4rem;
+    font-size: 1.5rem;
+}
+
+.thank-you {
     display: none;
 }
