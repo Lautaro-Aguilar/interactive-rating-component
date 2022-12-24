@@ -27,6 +27,10 @@ body {
     justify-content: center;
 }
 
+.evaluation {
+    display: block;
+}
+
 .container {
     width: 40rem;
     background-color: var(--darkblue);
@@ -59,10 +63,11 @@ body {
     margin-bottom: 2.7rem;
 }
 
-.rating-wrapper {
+.numbers {
     display: flex;
     justify-content: space-between;
     margin: 2.7rem 0;
+    color: var(--lightgrey);
 }
 .circle {
     border-radius: 50%;
@@ -83,13 +88,6 @@ input[type=radio] {
 label {
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--lightgrey);
-}
-
-.button,
-.rating-wrapper,
-.text-wrapper{
-    
 }
 
 input[type=submit] {
@@ -103,8 +101,34 @@ input[type=submit] {
     color: var(--white);
     letter-spacing: 0.4rem;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
-.thank-you {
+.thankyou {
+    text-align: center;
     display: none;
+}
+
+.thankyou img {
+    margin-bottom: 1.6rem;
+}
+
+.rating {
+    background-color: var(--mediumgrey);
+    color: var(--orange);
+    border-radius: 1.6em;
+    padding: 0.8rem 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.selected {
+    background-color: var(--lightgrey);
+    color: var(--white);
+}
+
+.circle:hover {
+    background-color: var(--lightgrey);
+    color: var(--white);
 }

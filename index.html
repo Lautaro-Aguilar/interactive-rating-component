@@ -17,42 +17,50 @@
 <body>
   <main class="container">
     <div class="card">
-      <div class="image-wrapper">
-        <img src="./images/icon-star.svg" alt="star icon">
+      <div class="evaluation">
+        <div class="image-wrapper">
+          <img src="./images/icon-star.svg" alt="star icon">
+        </div>
+        <div class="text-wrapper">
+          <h1 class="title">How did we do?</h1>
+          <p class="desc">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        </div>
+        <div class="numbers">
+          <div class="circle">
+            <input type="radio" name="1" value="1" id="r1">
+            <label for="r1">1</label>
+          </div>
+          <div class="circle">
+            <input type="radio" name="2" value="2" id="r2">
+            <label for="r2">2</label>
+          </div>
+          <div class="circle">
+            <input type="radio" name="3" value="3" id="r3">
+            <label for="r3">3</label>
+          </div>
+          <div class="circle">
+            <input type="radio" name="4" value="4" id="r4">
+            <label for="r4">4</label>
+          </div>
+          <div class="circle">
+            <input type="radio" name="5" value="5" id="r5">
+            <label for="r5">5</label>
+          </div>
+        </div>
+
+          <input type="submit" value="submit" id="btn">
+          
       </div>
-      <div class="text-wrapper">
-        <h1 class="title">How did we do?</h1>
-        <p class="desc">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      </div>
-      <div class="rating-wrapper">
-        <div class="circle">
-          <input type="radio" name="1" value="1" id="r1">
-          <label for="r1">1</label>
-        </div>
-        <div class="circle">
-          <input type="radio" name="2" value="2" id="r2">
-          <label for="r2">2</label>
-        </div>
-        <div class="circle">
-          <input type="radio" name="3" value="3" id="r3">
-          <label for="r3">3</label>
-        </div>
-        <div class="circle">
-          <input type="radio" name="4" value="4" id="r4">
-          <label for="r4">4</label>
-        </div>
-        <div class="circle">
-          <input type="radio" name="5" value="5" id="r5">
-          <label for="r5">5</label>
-        </div>
-      </div>
-      <div class="button">
-        <input type="submit" value="submit">
-      </div>
-      <div class="thank-you">
-        You selected 
+        <div class="thankyou">
+          <img src="./images/illustration-thank-you.svg" alt="thank you">
+            <div>
+              <span class="rating">You selected <span id="rating"></span> out of 5</span>
+            </div>
+          <h1 class="title">Thank you!</h1>
+          <p class="desc">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
       </div>
     </div>
   </main>
 </body>
+  <script src="app.js"></script>
 </html>
